@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # call to setup()
 setuptools.setup(
     name="scpi-whisperer",
-    version="0.1.1",
+    version="0.1.2",
     description="Easy access to scpi measurement devices",
     long_description=README,
     long_description_content_type="text/markdown",

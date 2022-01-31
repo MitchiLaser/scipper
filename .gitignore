@@ -1,3 +1,10 @@
+# automatically generated files from the makefile
+./build
+./dist
+./src/scpi_whisperer.egg-info
+
+
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

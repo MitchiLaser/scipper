@@ -9,12 +9,12 @@ README = (HERE / "README.md").read_text()
 
 # call to setup()
 setuptools.setup(
-    name="scpi-whisperer",
+    name="scipper",
     version="0.1.2",
     description="Easy access to scpi measurement devices",
     long_description=README,
     long_description_content_type="text/markdown",
-    url="https://github.com/MitchiLaser/scpi-whisperer",
+    url="https://github.com/MitchiLaser/scipper",
     author="Michael Hohenstein",
     author_email="michael@hohenste.in",
     license="MPL-2.0",

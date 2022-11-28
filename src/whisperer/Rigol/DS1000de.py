@@ -1,3 +1,5 @@
+# -*- encoding: utf-8 -*-
+
 """
 
 Library to control a Oscilloscope from the Rigol DS1000 series via its USB interface
@@ -1438,7 +1440,7 @@ class DS1000_Generic:
 
     _Num_Chanels = None    # the number of analog signal input chanels
     
-    _device = None     # the interface on which the device is attached to
+    _device = None      # the interface on which the device is attached to
     Chanels = None      # the chanels of the oscilloscope
     Acquire = None      # access to the menu available via the "Acquire" button
     Timebase = None     # access to the menu which is relevant to set the oscilloscope timebase
@@ -1447,10 +1449,6 @@ class DS1000_Generic:
     Math = None         # access to the menu for the Math Options
     Measurement = None  # access to the measurement options and the values    
     Keys = None         # access to the keys
-
-
-    # this has been removed because the logic analyzer is only build in the DS1000D series and therefore not a default of every scope
-    #Logic = None        # access to the logic analyzer
 
 
     def __init__(self, num_chanels : int, USB_DEVICE : str = '') -> None:
@@ -1517,9 +1515,6 @@ class DS1000_Generic:
         self.Math = math(self._device)
         self.Measurement = measure(self._device, self._Num_Chanels)
         self.Keys = keys(self._device, self._Num_Chanels)
-
-        # this has been removed because the logic analyzer is only build in the DS1000D series and therefore not a default of every scope
-        #self.Logic = logic_analyzer(self._device)
 
         ## everything done: the oscilloscope is initialized
 

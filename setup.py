@@ -10,7 +10,7 @@ README = (HERE / "README.md").read_text()
 # call to setup()
 setuptools.setup(
     name="scipper",
-    version="0.1.5",
+    version="0.1.6",
     description="Easy access to scpi measurement devices",
     long_description=README,
     long_description_content_type="text/markdown",
